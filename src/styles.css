@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine|Permanent+Marker");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Permanent Marker", Tangerine, Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 3em;
+  color: sienna;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.pourButton {
+  background-color: brown;
+  color: wheat;
+  padding: 1em;
+  border: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-family: "Permanent Marker", Cambria;
+  margin: 5px;
+}
+
+.confirmationText {
+  font-family: "Permanent Marker", Cambria;
+  color: sienna;
+  text-shadow: 4px 4px 4px #aaa;
+  display: inline-block;
+}
+
+.beverageSelect {
+  padding: 4px;
+  font-family: "Permanent Marker", Cambria;
+  color: sienna;
+  border-radius: 5px;
+}
+
+.loading {
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
